@@ -1,0 +1,36 @@
+TODO:
+1st) set up 2 scenes done
+2nd) 1st scene: cylinder specifier scene
+	- add 6 text boxes done
+	- specify origin of axes done
+	- specify radius and length of part done
+	- specify origin of tool done
+	- add an enter button done
+	- add a drop down selection for units done
+	- add a drop down selection for tool tip type done
+3rd) 2nd scene: cylinder IMPORTANT DONE
+	- render the cylinder with the data provided above IMPORTANT DONE
+4th) add 3 circle commands IMPORTANT NOT DONE
+	- redo rectangle calculations with convex hull algorithm IMPORTANT DONE
+5th) add animation IMPORTANT DONE
+	- check for choppiness IMPORTANT
+	- try to skip over choppy frames IMPORTANT
+	- fix lighting to match x axis translation ignore
+6th) add realtime (fake it)
+	- use a fake input source for realtime positions
+	- make sure correct units
+7th) add openfile dialog
+9th) get realtime data
+
+add a graphic class DONE
+make the graphic AT HOME
+setup the call backs DONE
+
+differing tool types DONE
+
+
+reset animation button
+
+recipe from kevin
+
+record video and take screen shot
