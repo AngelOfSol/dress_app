@@ -37,6 +37,7 @@ struct cylinder_data
 	Config * config;
 	HWND hwnd;
 	bool acr;
+	bool live;
 	cylinder_data() :size(), toolHome(), unitType(units::invalid), toolType(tools::invalid), fileName("test2.htm"), pipe(nullptr)
 	{
 	}

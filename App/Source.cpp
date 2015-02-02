@@ -219,6 +219,7 @@ int main(int argc, char ** argv)
 	}
 	message.pipe = &pipe;
 	message.acr = args.hasOption("acr");
+	message.live = args.hasOption("live");
 
 	auto renderScene = std::make_shared<RenderScene>(glHandler, message);
 

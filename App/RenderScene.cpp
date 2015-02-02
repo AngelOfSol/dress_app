@@ -25,7 +25,7 @@ void RenderScene::init(void)
 
 	if (this->input_.acr)
 		this->realtimeAccess = make_connection("192.168.10.40");//config.as<std::string>("ip"));
-
+	
 	this->speedMultiplier = config.as<int_frac>("speed");
 
 	auto movdata = loadMoves(this->input_.fileName);
@@ -212,6 +212,8 @@ void RenderScene::init(void)
 	this->y_distance = 0.0;
 	this->x_axis = -this->model.initialSize().x / int_frac(2.0f);
 	this->state = PLAYING;
+	if (this->input_.live)
+		this->state = REALTIME;
 
 	this->replayButton = make_textbutton(this->gl_, "courier", "PLAY", glm::vec2(10, 225));
 	this->replayButton->onPress() = [this](bool val)
